@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>Welcome My Love</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg1:#ff9a9e;
+      --bg2:#fad0c4;
+      --ink:#1f1f1f;
+      --accent:#ff4d6d;
+      --shadow: 0 10px 30px rgba(0,0,0,.12);
+    }
+
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%}
+    body{
+      font-family: 'Poppins', sans-serif;
+      color:var(--ink);
+      background: linear-gradient(120deg, var(--bg1), var(--bg2));
+      background-size: 200% 200%;
+      animation: bgShift 12s ease-in-out infinite;
+      display:grid; place-items:center;
+    }
+
+    @keyframes bgShift{
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+    }
+
+    .card{
+      width:92vw;
+      max-width:450px;
+      background: rgba(255,255,255,0.85);
+      backdrop-filter: blur(8px);
+      border-radius:20px;
+      box-shadow: var(--shadow);
+      padding:24px;
+      text-align:center;
+      position:relative;
+    }
+
+    h1{
+      font-size: 28px;
+      margin:10px 0;
+      font-weight:800;
+    }
+
+    .subtitle{
+      font-size:14px;
+      opacity:.8;
+      margin-bottom:12px;
+    }
+
+    .heart{
+      width:80px;
+      height:80px;
+      background: radial-gradient(circle at 30% 30%, #ff8fa3, #ff4d6d);
+      border-radius:50%;
+      margin:14px auto;
+      animation:beat 1.2s ease-in-out infinite;
+      position:relative;
+    }
+
+    @keyframes beat{
+      0%,100%{ transform:scale(1)}
+      50%{ transform:scale(1.1)}
+    }
+
+    .msg{
+      font-size:15px;
+      font-weight:600;
+      margin:12px 0;
+    }
+
+    .animated-link{
+      display:inline-block;
+      margin-top:16px;
+      padding:10px 18px;
+      background:white;
+      border-radius:30px;
+      font-weight:700;
+      color:var(--accent);
+      text-decoration:none;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      animation: shimmer 3s linear infinite;
+    }
+
+    @keyframes shimmer{
+      0%{opacity:0.8}
+      50%{opacity:1}
+      100%{opacity:0.8}
+    }
+
+    img.photo{
+      width:100px;
+      height:100px;
+      border-radius:50%;
+      object-fit:cover;
+      border:3px solid #fff;
+      box-shadow:0 6px 16px rgba(0,0,0,.15);
+      margin:10px auto;
+      display:block;
+    }
+
+    @media (max-width:400px){
+      h1{font-size:24px}
+      .msg{font-size:14px}
+      .animated-link{width:100%;text-align:center;}
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <img class="photo" src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?q=80&w=400" alt="Us together" />
+    <img class="heart" src="WhatsApp Image 2025-10-13 at 03.08.32_a427441f.jpg" alt="Us together" />
+    
+    <h1>Welcome, <span style="color:var(--accent)">My Snugglebear</span> ❤</h1>
+    <p class="subtitle"><b>I Loveeeeeeee Youuuuuuuu</b></p>
+    <p class="msg">Thank you for choosing me every single day.<br> You make my every day brighter and happier.  
+          I’m so lucky to have you in my life 💕<br>
+          You are the Best chapter in my life..💕 ✨</p>
+    <a class="animated-link" href="temp1.html">Tap here Babe..Sonu made something special.. Only for You <br> ➜</a>
+  </main>
+  <script>
+    document.documentElement.style.scrollBehavior = 'smooth';
+  </script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>Congrats, My Love</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg1:#ffdee9; --bg2:#b5fffc; --card:#ffffffee; --accent:#ff4d6d; --text:#222;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { height: 150%; width: 100%; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, var(--bg1), var(--bg2));
+      display: flex; justify-content: center; align-items: center;
+      padding: 12px;
+    }
+    .card {
+      width: 100%;
+      max-width: 420px;
+      background: var(--card);
+      border-radius: 18px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+      position: relative;
+      overflow: hidden;
+    }
+    .ribbon {
+      position: absolute; inset: 0; pointer-events: none;
+      background:
+        radial-gradient(800px 400px at -10% -20%, rgba(255,255,255,.25), transparent 50%),
+        radial-gradient(600px 300px at 120% 120%, rgba(255,255,255,.25), transparent 50%);
+    }
+    header {
+      padding: 20px 15px 10px;
+      text-align: center;
+    }
+    .title {
+      font-size: 22px;
+      margin-bottom: 6px;
+      font-weight: 800;
+      color: var(--text);
+    }
+    .subtitle {
+      font-size: 14px;
+      font-weight: 600;
+      color: #555;
+    }
+    .hero {
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+    .photo {
+      width: 160px;
+      height: 160px;
+      border-radius: 20px;
+      overflow: hidden;
+      border: 3px solid #fff;
+      box-shadow: 0 10px 18px rgba(0,0,0,.12);
+    }
+    .photo img {
+      width: 100%; height: 100%; object-fit: cover;
+    }
+    .msg {
+      background: #fff;
+      border-radius: 14px;
+      padding: 12px 14px;
+      text-align: center;
+      font-size: 14px;
+      line-height: 1.6;
+      box-shadow: 0 6px 14px rgba(0,0,0,.08);
+    }
+    .msg strong { color: var(--accent); }
+    .footer {
+      padding: 14px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+    .chip {
+      background: #fff;
+      border: 1px dashed #ffd1dc;
+      color: #c9184a;
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 12px;
+    }
+    .btn {
+      appearance: none;
+      border: none;
+      border-radius: 10px;
+      padding: 10px 14px;
+      font-weight: 700;
+      background: var(--accent);
+      color: #fff;
+      cursor: pointer;
+      box-shadow: 0 6px 14px rgba(255,77,109,.35);
+      transition: transform .08s ease;
+      font-size: 13px;
+    }
+    .btn:active { transform: translateY(1px); }
+    /* Floating hearts */
+    .hearts {
+      position: absolute; inset: 0; overflow: hidden; pointer-events: none;
+    }
+    .heart {
+      position: absolute; bottom: -30px; font-size: 16px;
+      opacity: 0.8; animation: rise 6s linear infinite;
+    }
+    @keyframes rise {
+      0% { transform: translateY(0) translateX(0) rotate(0deg); opacity: 0; }
+      10% { opacity: .9; }
+      100% { transform: translateY(-120vh) translateX(var(--x)) rotate(20deg); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="ribbon"></div>
+    <header>
+      <h1 class="title">This is 6th January, <span style="color:var(--accent)">2026</span>! 🎉</h1>
+      <p class="subtitle">A special day for me ❤</p>
+    </header>
+
+    <section class="hero">
+      <!-- Replace src with your photo -->
+      <div class="photo">
+        <img src="WhatsApp Image 2025-10-13 at 03.12.58_9f3c85fc.jpg" alt="Us together">
+      </div>
+      <div class="msg">
+        <p>
+          My <strong><!-- Her name -->Baban</strong>,<br>
+           Happy Birthday to the love of my life, my heart’s favorite person. ❤
+
+Today isn’t just your birthday — it’s the day the universe decided that someone as wonderful as you should exist🥹❤. From the momentyou came into my life, everything changed☺❤. You filled my world with laughter, peace, and a kind of love I never knew I was capable of feeling🌻❤. You’ve been my safe place, my greatest adventure, and my calm in every storm🧿❤.
+
+I love the way your eyes speak even when you’re silent, the way your smile can turn my worst day into something beautiful, and the way your presence makes me feel like I finally belong somewhere👀❤. You’re not just my boyfriend — you’re my best friend, my home, and my forever person🐼❤.
+
+On this special day, I just want to remind you how deeply you are loved — not just for who you are, but for how you make me feel: seen, valued, and cherished🌷❤. You deserve every bit of happiness this world can offer🌎❤. I hope today brings you endless joy, peace, and the warmth of knowing that my love for you will never fade💞.
+
+No matter where life takes us, my heart will always find its way back to you💝. So here’s to you, my love — the one who makes every day worth living🥺❤.
+Happy Birthday, my heart. You are my always and my everything. 🎂💫💋
+        </p>
+      </div>
+    </section>
+
+    <div class="footer">
+      <span class="chip">Forever Us 💞</span>
+      <span class="chip">You + Me = Infinity ♾</span>
+       Here I made something for you...<a href="temp2.html">Click here</a>to see it
+     
+    </div>
+
+    <div class="hearts" id="hearts"></div>
+  </main>
+
+  <script>
+    // Tap-to-share for mobile
+    async function shareLove() {
+      const text = "Congrats my love! Thank you for being with me always ❤";
+      if (navigator.share) {
+        try { await navigator.share({ title: "For You 💖", text }); } catch(e){}
+      } else {
+        navigator.clipboard?.writeText(text);
+        alert("Message copied! Paste it to share ❤");
+      }
+    }
+
+    // Floating hearts animation
+    const hearts = document.getElementById('hearts');
+    const emojis = ["💖","💞","💘","💗","💓","💟"];
+    function spawnHeart(){
+      const h = document.createElement('div');
+      h.className = 'heart';
+      h.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+      h.style.left = Math.random() * 100 + 'vw';
+      h.style.setProperty('--x', (Math.random()*40 - 20) + 'px');
+      h.style.animationDuration = (5 + Math.random()*3) + 's';
+      h.style.fontSize = (14 + Math.random()*10) + 'px';
+      hearts.appendChild(h);
+      setTimeout(()=>h.remove(), 8000);
+    }
+    setInterval(spawnHeart, 500);
+  </script>
+</body>
+</html>
