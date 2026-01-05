@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #ff4e92, #ffb86c);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 15px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      color: #fff;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+      margin-bottom: 8px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #fff;
+      margin-bottom: 15px;
+      animation: slideIn 1.5s ease-in-out;
+    }
+
+    /* Floating Hearts */
+    .hearts {
+      position: relative;
+      height: 80px;
+      margin-bottom: 15px;
+    }
+
+    .heart {
+      font-size: 20px;
+      color: #fff;
+      position: absolute;
+      animation: float 3s linear infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0) scale(1); opacity: 1; }
+      100% { transform: translateY(-90px) scale(1.4); opacity: 0; }
+    }
+
+    /* Big Images Row */
+    .images {
+      max-width: 400px;
+      margin-top: 20px;
+    }
+
+    .images img {
+      width: 160px;
+      height: 160px;
+      border-radius: 20px;
+      overflow: hidden;
+      border: 3px solid #fff;
+      box-shadow: 0 10px 18px rgba(0,0,0,.12);
+    }
+
+    .images img:hover {
+      transform: scale(1.2);
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.7); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+      
+    }
+  </style>
+</head>
+<body>
+  <h1>💖 Happy Birthday Puchu 💖</h1>
+  <p>❤ My love, my happiness, my everything ❤</p>
+
+  <!-- Floating Hearts -->
+  <div class="hearts">
+    <span class="heart" style="left:5px; animation-delay: 0s;">💗</span>
+    <span class="heart" style="left:35px; animation-delay: 0.5s;">💕</span>
+    <span class="heart" style="left:65px; animation-delay: 1s;">💞</span>
+    <span class="heart" style="left:95px; animation-delay: 1.5s;">❤</span>
+    <span class="heart" style="left:125px; animation-delay: 2s;">💓</span>
+  </div>
+
+  <!-- Big Round Images -->
+  <div class="images">
+    <img src="abc.jpg.jpg" alt="Memory 1">
+    <img src="WhatsApp Image 2025-10-13 at 03.11.53_22230c1b.jpg" alt="Memory 2">
+    <img src="WhatsApp Image 2025-10-13 at 03.10.49_504a87ae.jpg" alt="Memory 3">
+     <img src="WhatsApp Image 2025-10-13 at 03.09.18_fb0a9e1b.jpg" alt="Memory 3">
+      <img src="WhatsApp Image 2025-10-13 at 03.10.48_30964a85.jpg" alt="Memory 3">
+      <img src="WhatsApp Image 2025-10-13 at 03.11.22_25d4ce27.jpg" alt="Memory 3">
+  </div>
+</body>
+</html>
